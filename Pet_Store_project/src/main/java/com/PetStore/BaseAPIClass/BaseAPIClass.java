@@ -2,11 +2,7 @@ package com.PetStore.BaseAPIClass;
 
 import java.io.IOException;
 import java.sql.SQLException;
-
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-
-import genericUtilities.DataBaseUtil;
+import org.testng.annotations.*;
 import genericUtilities.FileUtil;
 import genericUtilities.JavaUtil;
 
@@ -19,14 +15,12 @@ import io.restassured.specification.ResponseSpecification;
 public class BaseAPIClass {
 	public JavaUtil jlib = new JavaUtil();
 	public FileUtil flib = new FileUtil();
-	public DataBaseUtil DBlib = new DataBaseUtil();
+
 	public static RequestSpecification reqSpecObject;
 	public static ResponseSpecification resSpecObject;
 	
 	@BeforeSuite
 	public void configBS() throws ClassNotFoundException, SQLException, IOException {
-		
-		
 		RequestSpecBuilder reqObj = new RequestSpecBuilder();
 		reqObj.setContentType(ContentType.JSON);
 		reqObj.setBaseUri(flib.getValueFromPropertiesFile("BASEUri"));
