@@ -8,7 +8,7 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class FileUtil {
-	public String getValueFromPropertiesFile(String Key) throws IOException {
+	public String getValueFromPropertiesFile(String Key) throws IOException {	
 		FileInputStream fis = new FileInputStream(".\\src\\main\\resources\\commonData.properties");
 		Properties pro = new Properties();
 		pro.load(fis);
