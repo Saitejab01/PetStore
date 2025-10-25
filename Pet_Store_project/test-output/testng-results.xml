@@ -1,102 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
-=======
-<<<<<<< HEAD
-<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2025-10-25T14:15:05 IST" name="Default suite" finished-at="2025-10-25T14:15:14 IST" duration-ms="9029">
-=======
-  <suite started-at="2025-10-25T14:28:37 IST" name="Default suite" finished-at="2025-10-25T14:28:51 IST" duration-ms="14222">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+  <suite started-at="2025-10-25T14:51:14 IST" name="Suite" finished-at="2025-10-25T14:51:45 IST" duration-ms="31121">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2025-10-25T14:15:05 IST" name="Default test" finished-at="2025-10-25T14:15:14 IST" duration-ms="9029">
+    <test started-at="2025-10-25T14:51:14 IST" name="Test" finished-at="2025-10-25T14:51:45 IST" duration-ms="31121">
       <class name="com.petStore.pets.PetsTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:04 IST" name="configBS" finished-at="2025-10-25T14:15:05 IST" duration-ms="514" status="PASS">
-=======
-    <test started-at="2025-10-25T14:28:37 IST" name="Default test" finished-at="2025-10-25T14:28:51 IST" duration-ms="14222">
-      <class name="com.petStore.user.UserCRUDTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.user.UserCRUDTest@22fcf7ab]" started-at="2025-10-25T14:28:37 IST" name="configBS" finished-at="2025-10-25T14:28:37 IST" duration-ms="520" status="PASS">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:14 IST" name="configBS" finished-at="2025-10-25T14:51:14 IST" duration-ms="447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-<<<<<<< HEAD
-        <test-method signature="createPetTest()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:05 IST" name="createPetTest" finished-at="2025-10-25T14:15:08 IST" duration-ms="2985" status="PASS">
-=======
-        <test-method signature="createUser()[pri:1, instance:com.petStore.user.UserCRUDTest@22fcf7ab]" started-at="2025-10-25T14:28:37 IST" name="createUser" finished-at="2025-10-25T14:28:49 IST" duration-ms="11629" status="PASS">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+        <test-method signature="createPetTest()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:14 IST" name="createPetTest" finished-at="2025-10-25T14:51:17 IST" duration-ms="2990" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- createPetTest -->
-        <test-method signature="findPetByStatusTest()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:08 IST" name="findPetByStatusTest" finished-at="2025-10-25T14:15:09 IST" duration-ms="1452" status="PASS">
+        <test-method signature="findPetByStatusTest()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:17 IST" name="findPetByStatusTest" finished-at="2025-10-25T14:51:19 IST" duration-ms="1599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findPetByStatusTest -->
-        <test-method signature="getPetDetails()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:09 IST" name="getPetDetails" finished-at="2025-10-25T14:15:11 IST" depends-on-methods="com.petStore.pets.PetsTest.createPetTest" duration-ms="1145" status="PASS">
-=======
-        </test-method> <!-- createUser -->
-        <test-method signature="login()[pri:4, instance:com.petStore.user.UserCRUDTest@22fcf7ab]" started-at="2025-10-25T14:28:49 IST" name="login" finished-at="2025-10-25T14:28:50 IST" depends-on-methods="com.petStore.user.UserCRUDTest.createUser" duration-ms="1283" status="PASS">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+        <test-method signature="getPetDetails()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:19 IST" name="getPetDetails" finished-at="2025-10-25T14:51:20 IST" depends-on-methods="com.petStore.pets.PetsTest.createPetTest" duration-ms="1286" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- getPetDetails -->
-        <test-method signature="updateThePet()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:11 IST" name="updateThePet" finished-at="2025-10-25T14:15:12 IST" depends-on-methods="com.petStore.pets.PetsTest.getPetDetails" duration-ms="1144" status="PASS">
-=======
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:5, instance:com.petStore.user.UserCRUDTest@22fcf7ab]" started-at="2025-10-25T14:28:50 IST" name="logout" finished-at="2025-10-25T14:28:51 IST" depends-on-methods="com.petStore.user.UserCRUDTest.login" duration-ms="1265" status="PASS">
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
+        <test-method signature="updateThePet()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:20 IST" name="updateThePet" finished-at="2025-10-25T14:51:21 IST" depends-on-methods="com.petStore.pets.PetsTest.getPetDetails" duration-ms="1279" status="PASS">
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- updateThePet -->
-        <test-method signature="deletePetById()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:12 IST" name="deletePetById" finished-at="2025-10-25T14:15:13 IST" depends-on-methods="com.petStore.pets.PetsTest.updateThePet" duration-ms="1126" status="PASS">
+        <test-method signature="deletePetById()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:21 IST" name="deletePetById" finished-at="2025-10-25T14:51:23 IST" depends-on-methods="com.petStore.pets.PetsTest.updateThePet" duration-ms="1267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePetById -->
-        <test-method signature="updatePetByIdTest()[pri:0, instance:com.petStore.pets.PetsTest@3d34d211]" started-at="2025-10-25T14:15:13 IST" name="updatePetByIdTest" finished-at="2025-10-25T14:15:14 IST" depends-on-methods="com.petStore.pets.PetsTest.updateThePet" duration-ms="1129" status="PASS">
+        <test-method signature="updatePetByIdTest()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:23 IST" name="updatePetByIdTest" finished-at="2025-10-25T14:51:24 IST" depends-on-methods="com.petStore.pets.PetsTest.updateThePet" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePetByIdTest -->
-      </class> <!-- com.petStore.pets.PetsTest -->
-=======
-        </test-method> <!-- logout -->
-      </class> <!-- com.petStore.user.UserCRUDTest -->
-=======
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-10-25T14:23:56 IST" name="Default suite" finished-at="2025-10-25T14:24:03 IST" duration-ms="7550">
-    <groups>
-    </groups>
-    <test started-at="2025-10-25T14:23:56 IST" name="Default test" finished-at="2025-10-25T14:24:03 IST" duration-ms="7550">
-      <class name="com.petStore.store.StoreOperations">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.store.StoreOperations@587e5365]" started-at="2025-10-25T14:23:55 IST" name="configBS" finished-at="2025-10-25T14:23:56 IST" duration-ms="984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method signature="placeOrder()[pri:0, instance:com.petStore.store.StoreOperations@587e5365]" started-at="2025-10-25T14:23:56 IST" name="placeOrder" finished-at="2025-10-25T14:24:02 IST" duration-ms="6123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method signature="deleteParchaseDetails()[pri:0, instance:com.petStore.store.StoreOperations@587e5365]" started-at="2025-10-25T14:24:02 IST" name="deleteParchaseDetails" finished-at="2025-10-25T14:24:03 IST" depends-on-methods="com.petStore.store.StoreOperations.placeOrder" duration-ms="1361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteParchaseDetails -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.petStore.store.StoreOperations@587e5365]" started-at="2025-10-25T14:24:03 IST" name="configAS" finished-at="2025-10-25T14:24:03 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.petStore.pets.PetsTest@70325e14]" started-at="2025-10-25T14:51:45 IST" name="configAS" finished-at="2025-10-25T14:51:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
+      </class> <!-- com.petStore.pets.PetsTest -->
+      <class name="com.petStore.user.UserCRUDTest">
+        <test-method signature="createUser()[pri:1, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:24 IST" name="createUser" finished-at="2025-10-25T14:51:30 IST" duration-ms="5584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="updateUser()[pri:2, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:30 IST" name="updateUser" finished-at="2025-10-25T14:51:34 IST" duration-ms="4275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="getUser()[pri:3, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:34 IST" name="getUser" finished-at="2025-10-25T14:51:35 IST" depends-on-methods="com.petStore.user.UserCRUDTest.createUser" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+        <test-method signature="login()[pri:4, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:35 IST" name="login" finished-at="2025-10-25T14:51:36 IST" depends-on-methods="com.petStore.user.UserCRUDTest.createUser" duration-ms="1273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:5, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:36 IST" name="logout" finished-at="2025-10-25T14:51:38 IST" depends-on-methods="com.petStore.user.UserCRUDTest.login" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="deleteUser()[pri:6, instance:com.petStore.user.UserCRUDTest@69453e37]" started-at="2025-10-25T14:51:38 IST" name="deleteUser" finished-at="2025-10-25T14:51:39 IST" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.petStore.user.UserCRUDTest -->
+      <class name="com.petStore.store.StoreOperations">
+        <test-method signature="getInventory()[pri:0, instance:com.petStore.store.StoreOperations@6f4a47c7]" started-at="2025-10-25T14:51:39 IST" name="getInventory" finished-at="2025-10-25T14:51:40 IST" duration-ms="1273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInventory -->
+        <test-method signature="placeOrder()[pri:0, instance:com.petStore.store.StoreOperations@6f4a47c7]" started-at="2025-10-25T14:51:40 IST" name="placeOrder" finished-at="2025-10-25T14:51:43 IST" duration-ms="2585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method signature="deleteParchaseDetails()[pri:0, instance:com.petStore.store.StoreOperations@6f4a47c7]" started-at="2025-10-25T14:51:43 IST" name="deleteParchaseDetails" finished-at="2025-10-25T14:51:44 IST" depends-on-methods="com.petStore.store.StoreOperations.placeOrder" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteParchaseDetails -->
+        <test-method signature="getParchaseDetails()[pri:0, instance:com.petStore.store.StoreOperations@6f4a47c7]" started-at="2025-10-25T14:51:44 IST" name="getParchaseDetails" finished-at="2025-10-25T14:51:45 IST" depends-on-methods="com.petStore.store.StoreOperations.placeOrder" duration-ms="1267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParchaseDetails -->
       </class> <!-- com.petStore.store.StoreOperations -->
->>>>>>> refs/heads/storeSubBranch
->>>>>>> branch 'master' of https://github.com/Saitejab01/PetStore.git
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
