@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1462360486\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--232922554\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +108,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.petStore.pets.PetsTest" class="method navigator-link" hash-for-method="deletePetById">deletePetById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.petStore.pets.PetsTest" class="method navigator-link" hash-for-method="findPetByStatusTest">findPetByStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.petStore.pets.PetsTest" class="method navigator-link" hash-for-method="getPetDetails">getPetDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.petStore.pets.PetsTest" class="method navigator-link" hash-for-method="updatePetByIdTest">updatePetByIdTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,9 +158,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="deletePetById">
+                  </a> <!-- deletePetById -->
+                  <span class="method-name">deletePetById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPetByStatusTest">
+                  </a> <!-- findPetByStatusTest -->
+                  <span class="method-name">findPetByStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="getPetDetails">
                   </a> <!-- getPetDetails -->
                   <span class="method-name">getPetDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePetByIdTest">
+                  </a> <!-- updatePetByIdTest -->
+                  <span class="method-name">updatePetByIdTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -160,7 +196,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1462360486\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--232922554\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -209,24 +245,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createPetTest')
 data.setCell(0, 2, 'com.petStore.pets.PetsTest')
-data.setCell(0, 3, 2972);
+data.setCell(0, 3, 2985);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getPetDetails')
+data.setCell(1, 1, 'findPetByStatusTest')
 data.setCell(1, 2, 'com.petStore.pets.PetsTest')
-data.setCell(1, 3, 1168);
+data.setCell(1, 3, 1452);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateThePet')
+data.setCell(2, 1, 'getPetDetails')
 data.setCell(2, 2, 'com.petStore.pets.PetsTest')
-data.setCell(2, 3, 1133);
+data.setCell(2, 3, 1145);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateThePet')
+data.setCell(3, 2, 'com.petStore.pets.PetsTest')
+data.setCell(3, 3, 1144);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'updatePetByIdTest')
+data.setCell(4, 2, 'com.petStore.pets.PetsTest')
+data.setCell(4, 3, 1129);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deletePetById')
+data.setCell(5, 2, 'com.petStore.pets.PetsTest')
+data.setCell(5, 3, 1126);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -259,15 +307,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">createPetTest</span>
-                <span class="method-start">549 ms</span>
+                <span class="method-start">542 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">findPetByStatusTest</span>
+                <span class="method-start">3531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPetDetails</span>
-                <span class="method-start">3526 ms</span>
+                <span class="method-start">4988 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateThePet</span>
-                <span class="method-start">4697 ms</span>
+                <span class="method-start">6135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePetById</span>
+                <span class="method-start">7282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePetByIdTest</span>
+                <span class="method-start">8411 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

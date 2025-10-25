@@ -1,5 +1,9 @@
 package com.petStore.pets;
 
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+
 import org.testng.annotations.Test;
 
 import com.PetStore.BaseAPIClass.BaseAPIClass;
@@ -9,10 +13,6 @@ import POJO.util.PetPojo;
 import POJO.util.Tag;
 import iEndPoints.IEndPointsOfPets;
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
-
-import java.util.ArrayList;
 
 public class PetsTest extends BaseAPIClass{
 	int id;
@@ -61,6 +61,47 @@ public class PetsTest extends BaseAPIClass{
 		.body(cPet)
 		.when()
 		.put(IEndPointsOfPets.UpdatePetPut)
+		.then()
+		.spec(resSpecObject)
+		.log()
+		.all();
+	}
+	
+	@Test
+	public void findPetByStatusTest() {
+		given()
+		.spec(reqSpecObject)
+		.queryParam("status", "available")
+		.when()
+		.get(IEndPointsOfPets.FindPetStatusGet)
+		.then()
+		.spec(resSpecObject)
+		.log()
+		.all();
+	}
+	
+	@Test(dependsOnMethods = "updateThePet")
+	public void updatePetByIdTest() {
+		given()
+		.spec(reqSpecObject)
+		.pathParam("petId", id)
+		.formParam("name", "changed_"+jlib.getRandomNumber())
+		.formParam("status", "pending")
+		.when()
+		.get(IEndPointsOfPets.UpdatePetByIDPost)
+		.then()
+		.spec(resSpecObject)
+		.log()
+		.all();
+	}
+	
+	@Test(dependsOnMethods = "updateThePet")
+	public void deletePetById() {
+		given()
+		.spec(reqSpecObject)
+		.pathParam("petId", id)
+		.when()
+		.get(IEndPointsOfPets.deletePetByIDDelete)
 		.then()
 		.spec(resSpecObject)
 		.log()

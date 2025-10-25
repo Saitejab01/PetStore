@@ -5,8 +5,11 @@
     <classes>
       <class name="com.petStore.pets.PetsTest">
         <methods>
+          <include name="createPetTest"/>
           <include name="getPetDetails"/>
           <include name="configBS"/>
+          <include name="updatePetByIdTest"/>
+          <include name="updateThePet"/>
         </methods>
       </class> <!-- com.petStore.pets.PetsTest -->
     </classes>
