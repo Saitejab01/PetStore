@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-25T12:03:25 IST" name="Default suite" finished-at="2025-10-25T12:03:28 IST" duration-ms="2604">
+  <suite started-at="2025-10-25T12:21:06 IST" name="Default suite" finished-at="2025-10-25T12:21:09 IST" duration-ms="3474">
     <groups>
     </groups>
-    <test started-at="2025-10-25T12:03:25 IST" name="Default test" finished-at="2025-10-25T12:03:28 IST" duration-ms="2604">
-      <class name="com.petStore.user.CreateUserTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.user.CreateUserTest@7bedc48a]" started-at="2025-10-25T12:03:25 IST" name="configBS" finished-at="2025-10-25T12:03:25 IST" duration-ms="638" status="PASS">
+    <test started-at="2025-10-25T12:21:06 IST" name="Default test" finished-at="2025-10-25T12:21:09 IST" duration-ms="3474">
+      <class name="com.petStore.store.StoreOperations">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.store.StoreOperations@ae13544]" started-at="2025-10-25T12:21:04 IST" name="configBS" finished-at="2025-10-25T12:21:06 IST" duration-ms="1108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method signature="createUser()[pri:0, instance:com.petStore.user.CreateUserTest@7bedc48a]" started-at="2025-10-25T12:03:25 IST" name="createUser" finished-at="2025-10-25T12:03:28 IST" duration-ms="2573" status="PASS">
+        <test-method signature="getInventory()[pri:0, instance:com.petStore.store.StoreOperations@ae13544]" started-at="2025-10-25T12:21:06 IST" name="getInventory" finished-at="2025-10-25T12:21:09 IST" duration-ms="3413" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-      </class> <!-- com.petStore.user.CreateUserTest -->
+        </test-method> <!-- getInventory -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.petStore.store.StoreOperations@ae13544]" started-at="2025-10-25T12:21:09 IST" name="configAS" finished-at="2025-10-25T12:21:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.petStore.store.StoreOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.petStore.user.CreateUserTest">
+      <class name="com.petStore.store.StoreOperations">
         <methods>
+          <include name="getInventory"/>
           <include name="configAS"/>
           <include name="configBS"/>
-          <include name="createUser"/>
         </methods>
-      </class> <!-- com.petStore.user.CreateUserTest -->
+      </class> <!-- com.petStore.store.StoreOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
