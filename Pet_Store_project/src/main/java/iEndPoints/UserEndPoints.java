@@ -5,6 +5,7 @@ public interface UserEndPoints {
 	String GET_USER ="/user/{username}"; 
 	String UPDATE_USER ="/user/{username}"; 
 	String DELETE_USER ="/user/{username}"; 
-	
+	String LOGIN_USER = "/user/login";
+	String LOGOUT_USER = "/user/logout";
 
 }

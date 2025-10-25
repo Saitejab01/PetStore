@@ -43,6 +43,34 @@ public class UserCRUDTest extends BaseAPIClass {
 			.spec(resSpecObject);	
 	}
 	
+	@Test(dependsOnMethods = "createUser",priority=4)
+	public void login() {
+		System.out.println("User Loging in");
+		given()
+		.spec(reqSpecObject)
+		.queryParam("username", userName)
+		.queryParam("password", "sample@123")
+	.when()
+		.get(UserEndPoints.LOGIN_USER)
+	.then()
+		.statusCode(200)
+		.log().all()
+		.spec(resSpecObject);
+	}
+	
+	@Test(dependsOnMethods = "login",priority=5)
+	public void logout() {
+		System.out.println("User Logging out");
+		given()
+		.spec(reqSpecObject)
+	.when()
+		.get(UserEndPoints.LOGOUT_USER)
+	.then()
+		.statusCode(200)
+		.log().all()
+		.spec(resSpecObject);
+	}
+	
 	@Test(priority = 2)
 	public void updateUser() throws InterruptedException {
 		System.out.println("Updating User");
@@ -59,7 +87,7 @@ public class UserCRUDTest extends BaseAPIClass {
 		Thread.sleep(3000);
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void deleteUser() {
 		System.out.println("Deleting User");
 		given()
