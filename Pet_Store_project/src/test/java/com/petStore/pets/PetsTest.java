@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 public class PetsTest extends BaseAPIClass{
 	int id;
+	PetPojo cPet;
 	@Test
 	public void createPetTest() {
 		ArrayList<String> imgUrlList = new ArrayList<String>();
@@ -26,7 +27,7 @@ public class PetsTest extends BaseAPIClass{
 		tagList.add(new Tag(1, "puppy"));
 		tagList.add(new Tag(2, "bull"));
 		tagList.add(new Tag(3, "lollipop"));
-		PetPojo cPet = new PetPojo(62222, new Category(1, "doggy"), "ram", imgUrlList, tagList, "available");
+		cPet = new PetPojo(jlib.getRandomNumber(), new Category(1, "doggy"), "ram_"+jlib.getRandomNumber(), imgUrlList, tagList, "available");
 		Response resp = given()
 		.spec(reqSpecObject)
 		.body(cPet)
@@ -39,13 +40,27 @@ public class PetsTest extends BaseAPIClass{
 		id=resp.jsonPath().get("id");
 	}
 	
-	@Test
+	@Test(dependsOnMethods = "createPetTest")
 	public void getPetDetails() {
 		given()
 		.spec(reqSpecObject)
 		.pathParam("petId", id)
 		.when()
 		.get(IEndPointsOfPets.FindPetIDGet)
+		.then()
+		.spec(resSpecObject)
+		.log()
+		.all();
+	}
+	
+	@Test(dependsOnMethods = "getPetDetails")
+	public void updateThePet() {
+		cPet.setName("raju_"+jlib.getRandomNumber());
+		given()
+		.spec(reqSpecObject)
+		.body(cPet)
+		.when()
+		.put(IEndPointsOfPets.UpdatePetPut)
 		.then()
 		.spec(resSpecObject)
 		.log()
