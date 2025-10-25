@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class FileUtil {
 	public String getValueFromPropertiesFile(String Key) throws IOException {
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\git\\PetStoreProject\\Pet_Store_project\\src\\main\\resources\\commonData.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\User\\git\\PetStoreProject\\Pet_Store_project\\src\\main\\resources\\commonData.properties");		FileInputStream fis = new FileInputStream(".\\src\\main\\resources\\commonData.properties");
 		Properties pro = new Properties();
 		pro.load(fis);
 		String value=pro.getProperty(Key);
@@ -17,7 +17,7 @@ public class FileUtil {
 		return value;
 	}
 	public String getValueFromExcelFile(String sheetName,int rowNum,int cellNum) throws EncryptedDocumentException, IOException {
-		FileInputStream fis = new FileInputStream("C:\\Users\\User\\eclipse-workspace\\ninza_HRM_RestAssured_Backend_Testing_Framework\\config\\commonData.properties");
+		FileInputStream fis = new FileInputStream(".\\src\\main\\resources\\commonData.properties");
 		return WorkbookFactory.create(fis).getSheet(sheetName).getRow(rowNum).getCell(cellNum).toString();
 	}
 }
