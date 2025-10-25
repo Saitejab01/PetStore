@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-25T12:25:33 IST" name="Default suite" finished-at="2025-10-25T12:25:37 IST" duration-ms="3852">
+  <suite started-at="2025-10-25T12:31:50 IST" name="Default suite" finished-at="2025-10-25T12:31:54 IST" duration-ms="4106">
     <groups>
     </groups>
-    <test started-at="2025-10-25T12:25:33 IST" name="Default test" finished-at="2025-10-25T12:25:37 IST" duration-ms="3852">
+    <test started-at="2025-10-25T12:31:50 IST" name="Default test" finished-at="2025-10-25T12:31:54 IST" duration-ms="4106">
       <class name="com.petStore.pets.PetsTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:25:33 IST" name="configBS" finished-at="2025-10-25T12:25:33 IST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:31:50 IST" name="configBS" finished-at="2025-10-25T12:31:50 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method signature="createPetTest()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:25:33 IST" name="createPetTest" finished-at="2025-10-25T12:25:36 IST" duration-ms="2662" status="PASS">
+        <test-method signature="createPetTest()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:31:50 IST" name="createPetTest" finished-at="2025-10-25T12:31:53 IST" duration-ms="2768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPetTest -->
-        <test-method signature="getPetDetails()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:25:36 IST" name="getPetDetails" finished-at="2025-10-25T12:25:37 IST" duration-ms="1159" status="PASS">
+        <test-method signature="getPetDetails()[pri:0, instance:com.petStore.pets.PetsTest@20d525]" started-at="2025-10-25T12:31:53 IST" name="getPetDetails" finished-at="2025-10-25T12:31:54 IST" duration-ms="1306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPetDetails -->
