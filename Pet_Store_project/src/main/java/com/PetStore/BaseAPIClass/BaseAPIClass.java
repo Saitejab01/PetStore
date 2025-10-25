@@ -2,9 +2,10 @@ package com.PetStore.BaseAPIClass;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 import genericUtilities.FileUtil;
 import genericUtilities.JavaUtil;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
@@ -17,6 +18,7 @@ public class BaseAPIClass {
 
 	public static RequestSpecification reqSpecObject;
 	public static ResponseSpecification resSpecObject;
+	
 	@BeforeSuite
 	public void configBS() throws ClassNotFoundException, SQLException, IOException {
 		RequestSpecBuilder reqObj = new RequestSpecBuilder();
@@ -27,5 +29,8 @@ public class BaseAPIClass {
 		ResponseSpecBuilder resObj = new ResponseSpecBuilder();
 		resObj.expectContentType(ContentType.JSON);
 		resSpecObject = resObj.build();
+	}
+	@AfterSuite
+	public void configAS() throws SQLException {
 	}
 }
