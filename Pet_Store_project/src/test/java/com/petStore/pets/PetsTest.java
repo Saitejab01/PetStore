@@ -8,12 +8,14 @@ import POJO.util.Category;
 import POJO.util.PetPojo;
 import POJO.util.Tag;
 import iEndPoints.IEndPointsOfPets;
+import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
 import java.util.ArrayList;
 
 public class PetsTest extends BaseAPIClass{
+	int id;
 	@Test
 	public void createPetTest() {
 		ArrayList<String> imgUrlList = new ArrayList<String>();
@@ -24,12 +26,26 @@ public class PetsTest extends BaseAPIClass{
 		tagList.add(new Tag(1, "puppy"));
 		tagList.add(new Tag(2, "bull"));
 		tagList.add(new Tag(3, "lollipop"));
-		PetPojo cPet = new PetPojo(10, new Category(1, "doggy"), "ram", imgUrlList, tagList, "available");
-		given()
+		PetPojo cPet = new PetPojo(62222, new Category(1, "doggy"), "ram", imgUrlList, tagList, "available");
+		Response resp = given()
 		.spec(reqSpecObject)
 		.body(cPet)
 		.when()
-		.post(IEndPointsOfPets.AddNewPetPost)
+		.post(IEndPointsOfPets.AddNewPetPost);
+		resp.then()
+		.spec(resSpecObject)
+		.log()
+		.all();
+		id=resp.jsonPath().get("id");
+	}
+	
+	@Test
+	public void getPetDetails() {
+		given()
+		.spec(reqSpecObject)
+		.pathParam("petId", id)
+		.when()
+		.get(IEndPointsOfPets.FindPetIDGet)
 		.then()
 		.spec(resSpecObject)
 		.log()
